@@ -1,0 +1,51 @@
+ INFO ahn: Adhearsion initialized!
+ INFO agi: Handling call with variables {:rdnis=>nil, :type=>"SIP", :network=>true, :uniqueid=>"1272757628.1", :request=>#<URI::Generic:0xb7c6737c URL:agi://localhost>, :enhanced=>0.0, :callingani2=>0, :query=>{}, :callingpres=>0, :callerid=>1000, :dnid=>999, :context=>"reminder", :callingtns=>0, :extension=>999, :type_of_calling_number=>:unknown, :threadid=>-1234781296, :version=>"1.6.2.6", :accountcode=>"", :calleridname=>"Kevin's Macbook Pro", :channel=>"SIP/1000-00000001", :language=>"en", :priority=>2}
+ INFO ahn: Shutting down gracefully at Sun May 02 01:48:13 +0200 2010.
+ INFO ahn: Adhearsion initialized!
+ INFO agi: Handling call with variables {:rdnis=>nil, :type=>"SIP", :network=>true, :uniqueid=>"1272757851.2", :request=>#<URI::Generic:0xb7c91cbc URL:agi://localhost>, :enhanced=>0.0, :callingani2=>0, :query=>{}, :callingpres=>0, :callerid=>"0031681885062", :dnid=>31737114708, :context=>"reminder", :callingtns=>0, :extension=>999, :type_of_calling_number=>:unknown, :threadid=>-1235100784, :version=>"1.6.2.6", :accountcode=>"", :calleridname=>"0031681885062", :channel=>"SIP/Budgetphone-00000002", :language=>"en", :priority=>2}
+ INFO ahn: Shutting down gracefully at Sun May 02 01:54:36 +0200 2010.
+ERROR agi: #<RuntimeError: stop>
+ERROR agi:      /usr/local/lib/ruby/1.8/gserver.rb:241:in `read'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/asterisk/commands.rb:67:in `raw_response'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/asterisk/commands.rb:98:in `execute'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/asterisk/commands.rb:878:in `play_string'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/asterisk/commands.rb:130:in `play'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/asterisk/commands.rb:129:in `each'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/asterisk/commands.rb:129:in `play'
+     /usr/local/reminder/components/simon_game/simon_game.rb:43:in `verify_attempt'
+     /usr/local/reminder/components/simon_game/simon_game.rb:18:in `start'
+     /usr/local/reminder/components/simon_game/simon_game.rb:15:in `loop'
+     /usr/local/reminder/components/simon_game/simon_game.rb:15:in `start'
+     /usr/local/reminder/components/simon_game/simon_game.rb:3:in `simon_game'
+     /usr/local/reminder/dialplan.rb:2:in `load'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/dial_plan.rb:50:in `instance_eval'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/dial_plan.rb:50:in `run'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/dial_plan.rb:105:in `handle'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/dial_plan.rb:81:in `handle'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/asterisk/agi_server.rb:23:in `serve'
+     /usr/local/lib/ruby/1.8/gserver.rb:211:in `start'
+     /usr/local/lib/ruby/1.8/gserver.rb:208:in `initialize'
+     /usr/local/lib/ruby/1.8/gserver.rb:208:in `new'
+     /usr/local/lib/ruby/1.8/gserver.rb:208:in `start'
+     /usr/local/lib/ruby/1.8/gserver.rb:198:in `initialize'
+     /usr/local/lib/ruby/1.8/gserver.rb:198:in `new'
+     /usr/local/lib/ruby/1.8/gserver.rb:198:in `start'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/voip/asterisk/agi_server.rb:69:in `start'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/initializer/asterisk.rb:56
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/theatre.rb:66:in `call'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/theatre.rb:66:in `trigger_immediately'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/theatre.rb:63:in `map'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/theatre.rb:63:in `trigger_immediately'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/events_support.rb:47:in `trigger_immediately'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/initializer.rb:349:in `trigger_after_initialized_hooks'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/initializer.rb:143:in `start'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/initializer.rb:92:in `start'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/cli.rb:129:in `start'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/cli.rb:19:in `send'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/lib/adhearsion/cli.rb:19:in `execute!'
+     /usr/local/lib/ruby/gems/1.8/gems/adhearsion-0.8.3/bin/ahn:28
+     /usr/local/bin/ahn:19:in `load'
+     /usr/local/bin/ahn:19
+ INFO ahn: Adhearsion initialized!
+ INFO agi: HANGUP event for call with uniqueid "1272765389.1" and channel "SIP/Budgetphone-00000001"
+ INFO ahn: Shutting down gracefully at Sun May 02 04:07:02 +0200 2010.

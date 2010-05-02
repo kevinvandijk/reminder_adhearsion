@@ -1,0 +1,3 @@
+reminder {
+  simon_game
+}
